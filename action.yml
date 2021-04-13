@@ -12,6 +12,9 @@ inputs:
     default: '.'
   AnacondaToken:
     description: 'Anaconda access Token'
+  platforms:
+    description: 'Platforms to publish [osx/linux/win]'
+    default: 'osx linux win'
     
 runs:
   using: 'docker'
