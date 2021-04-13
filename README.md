@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: publish-to-conda
-      uses: ravinpoudel/Github_Action_CondaPackage@1.0.2
+      uses: ravinpoudel/Github_Action_CondaPackage@1.0.3
       with:
         subDir: 'conda.recipe'
         AnacondaToken: ${{ secrets.MY_ANACONDA_TOKEN }}
