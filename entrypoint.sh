@@ -20,7 +20,7 @@ check_if_meta_yaml_file_exists() {
 build_package(){
 
     # Build for Linux
-    conda build -c conda-forge -c bioconda --output-folder . .
+    conda build -c conda-forge -c bioconda -c gagan3012 -c ravinpoudel --output-folder . .
     
     # Convert to other platforms: OSX, WIN
     if [[ $INPUT_PLATFORMS == *"osx"* ]]; then
