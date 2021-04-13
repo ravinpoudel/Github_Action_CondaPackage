@@ -20,7 +20,6 @@ jobs:
       with:
         CondaDir: 'conda'
         Channels: 'conda-forge bioconda' 
-        # Platforms: remove one or more of these platforms
         Platforms: 'osx-64 linux-32 linux-64 win-32 win-64'
         anacondatoken: ${{ secrets.MY_ANACONDA_TOKEN }}
 
