@@ -16,16 +16,12 @@ jobs:
       uses: actions/checkout@v2
 
     - name: publish-to-conda
-      uses: amauryval/publish_conda_package_action@1.1.0
+      uses: ravinpoudel/Github_Action_CondaPackage
       with:
-        # CondaDir: locate the directory containing your meta.yml, conda_build_config.yaml (...) files
         CondaDir: 'conda'
-        # Channels: You can add more channel with a space separator
-        Channels: 'conda-forge an-other-chan' 
+        Channels: 'conda-forge bioconda' 
         # Platforms: remove one or more of these platforms
         Platforms: 'osx-64 linux-32 linux-64 win-32 win-64'
-        CondaUsername: ${{ secrets.CONDA_USERNAME }}
-        CondaPassword: ${{ secrets.CONDA_PASSWORD }}
-```
+        anacondatoken: ${{ secrets.MY_ANACONDA_TOKEN }}
 
-* Configure CONDA_USERNAME and CONDA_PASSWORD secrets on your settings repository
+```
