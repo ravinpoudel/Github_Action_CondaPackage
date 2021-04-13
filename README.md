@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: publish-to-conda
-      uses: ravinpoudel/Github_Action_CondaPackage
+      uses: ravinpoudel/Github_Action_CondaPackage@1.0.0
       with:
         CondaDir: 'conda'
         Channels: 'conda-forge bioconda' 
